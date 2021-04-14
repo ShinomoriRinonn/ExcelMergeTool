@@ -56,6 +56,7 @@ class SheetReader:
                 cb =  CompareBounds(key_cell.column,key_cell.row,self.compare_width,merge_cell.bounds[3],key_cell.value)
                 cb.SetMergeCellState(merge_cell)
                 body_bounds_dic[key_cell.value] = cb
+
         for col_items in sheet.iter_cols(max_col = 1):
             #在计算计算第一列没有有合并单元格的单位
             for cell in col_items:

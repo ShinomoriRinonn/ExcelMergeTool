@@ -102,7 +102,7 @@ class CompareSheetReader:
         #讲list转换为集合
         target_set = set(target_body_list)
         base_set = set(base_body_list)
-        #target对baset的差集 当作新增
+        #target对baset的差集 当作新增  -- 注意 CompareSheetReader 中统计的为 id列
         result["add_key"] = target_set.difference(base_set)
         #base对target的差集 当作删除
         result["del_key"] = base_set.difference(target_set)

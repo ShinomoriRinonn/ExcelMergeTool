@@ -23,6 +23,12 @@ class ExcelMergeMain:
         self.path_mine = path_mine
         self.path_base = path_base
         
+        print("cccccccc")
+        print("path_merge : " + path_merge)
+        print("path_their : " + path_their)
+        print("path_mine : " + path_mine)
+        print("path_base : " + path_base)
+
         self.merge_reader = ExcelReader(path_merge,"Merge")
         self.their_reader = ExcelReader(path_their,"Their")
         self.mine_reader = ExcelReader(path_mine,"Mine")

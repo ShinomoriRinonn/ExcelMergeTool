@@ -29,6 +29,10 @@ class FileCopyHelper:
                count += 1
                if count >= 5:
                   raise Exception("不能读取非.xlsm文件 source_path == ",source_path)
+         else:
+            copy_path = source_path
+         print("...........")
+         #print(copy_path)
          self.copy_path = copy_path.replace(".xlsm",self.suffix) 
          if self.copy_path != None:
             copyfile(self.source_path, self.copy_path)
